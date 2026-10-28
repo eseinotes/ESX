@@ -1,0 +1,40 @@
+
+### List all students
+GET http://localhost:8080/students
+
+###
+
+### Create a student
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+    "name": "Ana",
+    "studyHours": 5
+}
+
+###
+
+### Get a student
+GET http://localhost:8080/students/1
+
+###
+
+### Update a student
+PUT http://localhost:8080/students/1
+Content-Type: application/json
+
+{
+    "name": "Ana",
+    "studyHours": 8
+}
+
+###
+
+### Delete a student
+DELETE http://localhost:8080/students/1
+
+###
+
+### Predict student performance
+GET http://localhost:8080/students/1/prediction

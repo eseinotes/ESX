@@ -1,0 +1,6 @@
+# Archivos de configuración de agentes
+AGENTS.md
+
+# Entornos virtuales de Python
+venv/
+.venv/

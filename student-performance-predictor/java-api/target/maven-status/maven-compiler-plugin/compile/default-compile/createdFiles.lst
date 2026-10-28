@@ -1,0 +1,7 @@
+edu\example\studentperformance\StudentRepository.class
+edu\example\studentperformance\StudentController.class
+edu\example\studentperformance\Main.class
+edu\example\studentperformance\PredictionClient.class
+edu\example\studentperformance\Student.class
+edu\example\studentperformance\StaticFileHandler.class
+edu\example\studentperformance\StudentService.class
