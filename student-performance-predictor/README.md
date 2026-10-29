@@ -23,11 +23,10 @@ El navegador se comunica únicamente con Java. Java también sirve el frontend, 
 - JDK 21 o posterior
 - Maven 3.9 o posterior
 - Python 3.11 o posterior
-- Visual Studio Code con su terminal integrada
 
-## Ejecución en Visual Studio Code
+## Ejecución en línea de comandos
 
-Abre la carpeta del repositorio en VS Code. Después, abre dos terminales mediante **Terminal > New Terminal**.
+Abre la carpeta del repositorio. Después, abre dos terminales.
 
 En la primera terminal, inicia Python. Los siguientes comandos de PowerShell funcionan en Windows:
 
