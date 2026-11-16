@@ -1,31 +1,11 @@
 # Interfaces y clases abstractas en Java
 
-## Descripción del proyecto
-
 Este proyecto es un ejemplo didáctico de **programación orientada a objetos (POO)** en Java. Su finalidad es mostrar cómo se utilizan las **interfaces**, las **clases abstractas**, la **herencia**, la **sobrescritura de métodos** y el **polimorfismo**.
 
 Para facilitar su comprensión, el código se divide en dos ejemplos independientes:
 
 1. Un sistema de pagos basado en una interfaz.
 2. Una jerarquía de animales basada en una clase abstracta.
-
-## Objetivos de aprendizaje
-
-Al estudiar y ejecutar este proyecto, el alumnado podrá:
-
-- Comprender qué es una interfaz y cómo se implementa.
-- Comprender qué es una clase abstracta y cómo se hereda de ella.
-- Diferenciar entre `implements` y `extends`.
-- Reconocer el uso de métodos abstractos y métodos ya implementados.
-- Aplicar la anotación `@Override` correctamente.
-- Entender el polimorfismo mediante variables de un tipo general que contienen objetos de tipos más específicos.
-- Identificar situaciones en las que conviene utilizar una interfaz o una clase abstracta.
-
-## Tecnologías utilizadas
-
-- Java 26, según la configuración del proyecto.
-- Apache Maven.
-- Aplicación de consola.
 
 ## Estructura del proyecto
 
@@ -199,24 +179,6 @@ Toby dice: Guau!
 Michi dice: Miau!
 ```
 
-## Compilación y ejecución
-
-Es necesario tener instalado un JDK compatible con la versión indicada en `pom.xml` y Apache Maven.
-
-Para compilar el proyecto:
-
-```bash
-mvn compile
-```
-
-Para ejecutar la clase principal:
-
-```bash
-mvn exec:java
-```
-
-También puede importarse como proyecto Maven desde un IDE y ejecutar directamente el método `main` de `InterfaceAndAbstract.java`.
-
 ## Conceptos importantes que deben observarse
 
 - `Payment` y `Animal` no se utilizan para crear directamente los objetos concretos del ejemplo.
@@ -225,26 +187,3 @@ También puede importarse como proyecto Maven desde un IDE y ejecutar directamen
 - `@Override` indica que un método implementa o sobrescribe un método definido en un tipo superior.
 - El tipo de la referencia determina qué operaciones se pueden invocar; el tipo real del objeto determina qué implementación se ejecuta.
 - El polimorfismo reduce el acoplamiento y facilita ampliar un programa con nuevas implementaciones.
-
-## Actividades propuestas
-
-1. Crear una clase `BankTransferPayment` que implemente `Payment`.
-2. Crear una clase `Cow` que herede de `Animal` e implemente su sonido.
-3. Añadir un método concreto `sleep()` a `Animal` y utilizarlo con todos los animales.
-4. Guardar varios objetos `Payment` en una colección y recorrerla para ejecutar distintos pagos.
-5. Guardar varios animales en una colección de tipo `Animal` y llamar a `makeSound()` sin comprobar su clase concreta.
-6. Investigar qué ocurriría si una clase no implementase el método abstracto heredado.
-7. Debatir por qué `Payment` se ha modelado como interfaz y `Animal` como clase abstracta.
-
-## Preguntas de autoevaluación
-
-- ¿Se puede crear un objeto directamente a partir de `Animal`? ¿Por qué?
-- ¿Qué obliga a hacer `implements Payment`?
-- ¿Qué diferencia existe entre `eat()` y `makeSound()` dentro de `Animal`?
-- ¿Por qué una variable `Animal` puede contener un objeto `Dog`?
-- ¿Qué método se ejecuta al llamar a `animal1.makeSound()`?
-- ¿Cuándo sería más apropiado utilizar una interfaz que una clase abstracta?
-
-## Conclusión
-
-Las interfaces y las clases abstractas permiten trabajar con abstracciones y definir estructuras extensibles. En este proyecto, `Payment` demuestra cómo varias clases pueden cumplir un mismo contrato, mientras que `Animal` muestra cómo varias subclases pueden compartir estado y comportamiento y, al mismo tiempo, proporcionar sus propias implementaciones. Ambos mecanismos hacen posible aplicar polimorfismo y diseñar código más flexible y mantenible.

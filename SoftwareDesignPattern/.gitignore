@@ -1,0 +1,13 @@
+# Maven: archivos compilados y empaquetados
+target/
+
+# IDEs
+.idea/
+.vscode/
+nbproject/private/
+*.iml
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
